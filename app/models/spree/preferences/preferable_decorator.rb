@@ -3,7 +3,7 @@ module Spree
     module PreferableDecorator
       private
 
-      def convert_preference_value(value, type)
+      def convert_preference_value(value, type, _options = nil)
         case type
         when :string, :text, :select
           value.to_s

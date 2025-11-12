@@ -1,7 +1,7 @@
 module Spree
   module Api
     module V1
-      class BraintreeClientTokenController < Spree::StoreController
+      class BraintreeClientTokenController < StoreController
         skip_before_action :authenticate_user
 
         before_action :find_order, only: :create
